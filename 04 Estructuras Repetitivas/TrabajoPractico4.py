@@ -75,7 +75,7 @@ for x in range(100,-1,-2):
 
 
 7) Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un 
-número entero positivo indicado por el usuario. '''
+número entero positivo indicado por el usuario. 
 suma = 0
 num_bucle = 0
 
@@ -84,6 +84,40 @@ num_usuario = int(input("Ingrese un número natural: "))
 for num_bucle in range(0,num_usuario +1):
     suma+= num_bucle
 print(f"La suma de los números desde 0 hasta {num_usuario} es: {suma}")    
+
+
+8) Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el 
+programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son 
+negativos y cuántos son positivos.
+
+# Inicializar variables
+pares = 0
+impares = 0
+pos = 0
+neg = 0
+cant = 10
+
+# Bucle para solicitar números al usuario
+for i in range(1, cant + 1):  # Iterar desde 1 hasta 'cant' inclusive
+    num = int(input("Dime un número: "))  # Leer un número entero
+    
+    # Comprobar si el número es par o impar
+    if num % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+
+    # Comprobar si el número es positivo o negativo
+    if num > 0:
+        pos += 1
+    elif num < 0:
+        neg += 1
+
+# Mostrar los resultados
+print(f"Hay {pares} números pares")
+print(f"Hay {impares} números impares")
+print(f"Hay {pos} números positivos")
+print(f"Hay {neg} números negativos")'''
 
 
 
