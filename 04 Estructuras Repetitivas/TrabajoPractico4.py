@@ -117,7 +117,38 @@ for i in range(1, cant + 1):  # Iterar desde 1 hasta 'cant' inclusive
 print(f"Hay {pares} números pares")
 print(f"Hay {impares} números impares")
 print(f"Hay {pos} números positivos")
-print(f"Hay {neg} números negativos")'''
+print(f"Hay {neg} números negativos")
+
+9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la 
+media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe 
+poder procesar 100 números cambiando solo un valor). 
+
+# Inicializar la suma de los números
+suma_total = 0
+cantidad_numeros = 10  # Cantidad de números a ingresar
+
+print(f"Ingrese {cantidad_numeros} números enteros:")
+
+# Bucle para solicitar los 100 números
+for i in range(cantidad_numeros):
+    numero = int(input(f"Ingrese el número {i + 1}: "))  # Solicitar cada número al usuario
+    suma_total += numero  # Acumular la suma de los números
+
+# Calcular la media
+media = suma_total / cantidad_numeros
+
+# Mostrar el resultado
+print(f"La media de los {cantidad_numeros} números ingresados es: {media}")
+
+10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el 
+usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+n = int(input("Ingrese un número:"))
+reverso = 0
+while n != 0:
+    cifra= n%10
+    reverso = reverso * 10 + cifra
+    n= n//10
+print(reverso)'''   
 
 
 
