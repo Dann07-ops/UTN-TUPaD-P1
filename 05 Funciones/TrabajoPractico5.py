@@ -41,6 +41,101 @@ informacion_personal(nombre,apellido, edad, residencia)
 dio como parámetro y devuelva el área del círculo. calcular_peri
 metro_circulo(radio) que reciba el radio como parámetro y devuel
 va el perímetro del círculo. Solicitar el radio al usuario y llamar am
-bas funciones para mostrar los resultados.'''
+bas funciones para mostrar los resultados.
+import math  # Importa el módulo math para acceder a la constante pi
+# Definir Funciones:
+def calcular_area_circulo(radio):
+    return math.pi * radio**2  # Fórmula para calcular el área
+def calcular_perimetro_circulo(radio):
+    return 2* math.pi * radio # Fórmula para calcular el perímetro
+# Programa principal:
+radio= float(input("Ingrese un número para el radio:"))
+area = calcular_area_circulo(radio)
+perímetro = calcular_perimetro_circulo(radio)
+print(f"El area es {area} y el perímetro es {perímetro}")
+
+ 5. Crear una función llamada segundos_a_horas(segundos) que reciba
+ una cantidad de segundos como parámetro y devuelva la cantidad
+ de horas correspondientes. Solicitar al usuario los segundos y mos
+trar el resultado usando esta función
+
+# Definir funciones:
+def segundos_a_horas(segundos):
+    return segundos / 3600 # Formula para comvertir segundos a horas
+
+# Programa principal:
+segundos= int(input("Ingrese segundos: ")) # Solicita los segundos al usuario
+horas = segundos_a_horas(segundos) # Convierte los segundos a horas
+# Imprime la salida con dos decimales 
+print(f"{horas:.2f} hs")
+
+6. Crear una función llamada tabla_multiplicar(numero) que reciba un
+ número como parámetro y imprima la tabla de multiplicar de ese
+ número del 1 al 10. Pedir al usuario el número y llamar a la fun
+ción.
+# Definir funcines:
+def tabla_multiplicar(numero):
+    for i in range(1,11): # Itera 1 al 10
+        print(f"{i} * 1 = {i * 1}")# Imprime la multiplicación
+    
+
+# Programa principal:
+num = int(input("Ingrese un número: "))
+tabla_multiplicar(num) # Llama a la función
+
+7. Crear una función llamada operaciones_basicas(a, b) que reciba
+ dos números como parámetros y devuelva una tupla con el resulta
+do de sumarlos, restarlos, multiplicarlos y dividirlos. Mostrar los re
+sultados de forma clara.
+#Definir funciones:
+def operaciones_basicas(a, b):
+    suma = a + b 
+    resta = a - b
+    multiplicacion = a * b
+    # Evitar dividir por cero
+    if b != 0:
+        division = a / b
+    else:
+        print("No se puede realizar division") 
+        input("Ingrese otro numero: ")  
+    return (suma, resta, multiplicacion , division)     
+  
+#Programa principal:
+num1= int(input("Ingrese un Primer numero: "))
+num2= int(input("Ingrese un segundo numero: "))
+resultado = operaciones_basicas(num1, num2)
+# Mostar resultados de forma clara:
+
+print(f"Suma: {resultado[0]}")
+print(f"resta: {resultado[1]}")
+print(f"Multiplicacion: {resultado[2]}")
+print(f"Division: {resultado[3]}")
+
+ 8. Crear una función llamada calcular_imc(peso, altura) que reciba el
+ peso en kilogramos y la altura en metros, y devuelva el índice de
+ masa corporal (IMC). Solicitar al usuario los datos y llamar a la fun
+ción para mostrar el resultado con dos decimales.
+#Definir funciones:
+def calcular_imc(peso, altura):
+   imc = peso/altura **2 
+   return imc
+
+     
+#Programa principal:
+peso= float(input("Ingrese su peso en Kg: "))
+altura= float(input("Ingrese su altura Metros: "))
+imc= calcular_imc(peso, altura)
+print(f"Su imc es {imc:.2f}")'''
+
+
+
+
+
+
+
+
+
+
+
 
 
