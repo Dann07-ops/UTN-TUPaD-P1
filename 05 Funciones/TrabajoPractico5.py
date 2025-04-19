@@ -24,7 +24,7 @@ saludar_usuario(nombre)
 edad, residencia) que reciba cuatro parámetros e imprima: “Soy
 [nombre] [apellido], tengo [edad] años y vivo en [residencia]”. Pe-
 dir los datos al usuario y llamar a esta función con los valores in-
-gresados.'''
+gresados.
 
 #Definir Funciones:
 def informacion_personal(nombre,apellido, edad, residencia):
@@ -36,5 +36,11 @@ apellido= input("Ingrese su apellido: ")
 edad = input("Ingrese su edad: ")
 residencia = input("Ingrese su dirrección:") 
 informacion_personal(nombre,apellido, edad, residencia)
+
+ 4. Crear dos funciones: calcular_area_circulo(radio) que reciba el ra
+dio como parámetro y devuelva el área del círculo. calcular_peri
+metro_circulo(radio) que reciba el radio como parámetro y devuel
+va el perímetro del círculo. Solicitar el radio al usuario y llamar am
+bas funciones para mostrar los resultados.'''
 
 
