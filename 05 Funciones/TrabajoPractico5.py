@@ -125,7 +125,39 @@ def calcular_imc(peso, altura):
 peso= float(input("Ingrese su peso en Kg: "))
 altura= float(input("Ingrese su altura Metros: "))
 imc= calcular_imc(peso, altura)
-print(f"Su imc es {imc:.2f}")'''
+print(f"Su imc es {imc:.2f}")
+
+
+ 9. Crear una función llamada celsius_a_fahrenheit(celsius) que reciba
+ una temperatura en grados Celsius y devuelva su equivalente en
+ Fahrenheit. Pedir al usuario la temperatura en Celsius y mostrar el
+ resultado usando la función.
+#Definir funciones:
+def celsius_a_fahrenheit(celsius):
+     resultado =  9/5 * celsius + 32 #convertir celsus a fahrenheit
+     return resultado
+#Programa principal:
+temp = float(input("Ingrese una temperatura en grados celsius: "))
+fahrenheit = celsius_a_fahrenheit(temp)
+print(f"Su temperatura ingresada {temp} °C es equivalente a: {fahrenheit} °F ")
+
+ 10.Crear una función llamada calcular_promedio(a, b, c) que reciba
+ tres números como parámetros y devuelva el promedio de ellos.
+ Solicitar los números al usuario y mostrar el resultado usando esta
+ función
+#Definir funciones:
+def calcular_promedio(a, b, c):
+    promedio = (a + b + c) / 3
+    return promedio
+#Programa principal:
+num_1 = float(input("Ingrese un número: ")) 
+num_2 = float(input("Ingrese un segundo número: ")) 
+num_3 = float(input("Ingrese un tercer número: ")) 
+prom = calcular_promedio(num_1,num_2,num_3)
+print(f"El promedio es de: {prom}")'''
+
+
+
 
 
 
